@@ -18,6 +18,12 @@ let verCertHenry = ()=>{
                 <img  @click="verCertHenry"  src="https://i.ibb.co/zmxgxnq/certificado-henry-page-0001.jpg" alt="Certificate Henry">
                 
             </div>
+            <div class="udemy  col-sm-3 ">
+                <h3>Nuclea</h3>
+                <p class="mb-12" >Donde aprendo y trabajo con Flutterflow, firebase y dart además de diseño mobile y flutter.</p>
+                <img src="https://media.licdn.com/dms/image/D4D22AQEpd9bVkMUw6g/feedshare-shrink_2048_1536/0/1709764611638?e=1713398400&v=beta&t=N66w0eHgnLBIQA6-fu3laQvpjW48uvGK-Gwrh6mRf1E" alt="constancia nuclea">
+                
+            </div>
             <div  class="coder  col-sm-3 items-center justify-center ">
                 <h3> Coderhouse</h3>
                 <p class="mb-10">Html5, css3, bootstrap, Sass, github, git, SEO, subida al servidor, clientes y presupuestos.</p>
@@ -29,18 +35,19 @@ let verCertHenry = ()=>{
                     
                 </a>
             </div>
-            <div class="udemy  col-sm-3 ">
-                <h3>Udemy</h3>
-                <p class="mb-12" >Donde aprendi, aprendo y refuerzo conocimientos en Vue.js 3, JavaScript, consultas API con framaworks, y diseño.</p>
-                <img src="https://companieslogo.com/img/orig/UDMY_BIG.D-125629a7.png?t=1635531363" alt="Udemy Logo">
-                
-            </div>
+            
         </div>
         <div v-else class="wraper row">
             <div class="soy col-sm-3">
     <h3>Soy Henry</h3>
     <p>Advanced JavaScript, data structures, React, Redux, Node.js, Express, SQL, PostgreSQL, Sequelize, Figma & more.</p>
     <img src="https://i.ibb.co/zmxgxnq/certificado-henry-page-0001.jpg" alt="Certificate SoyHenry">
+            
+</div>
+<div class="udemy col-sm-3">
+    <h3>Nuclea</h3>
+    <p class="mb-12">Where I learn and work with FlutterFlow, Firebase, and Dart, as well as mobile design and Flutter.</p>
+    <img src="https://media.licdn.com/dms/image/D4D22AQEpd9bVkMUw6g/feedshare-shrink_2048_1536/0/1709764611638?e=1713398400&v=beta&t=N66w0eHgnLBIQA6-fu3laQvpjW48uvGK-Gwrh6mRf1E" alt="constancia nuclea">
             
 </div>
 <div  class="coder col-sm-3 ">
@@ -53,12 +60,7 @@ let verCertHenry = ()=>{
         </div>    
     </a>
 </div>
-<div class="udemy col-sm-3">
-    <h3>Udemy</h3>
-    <p class="mb-12">Where I learn, reinforce and acquire knowledge in Vue.js 3, JavaScript, API queries with frameworks, and design.</p>
-    <img src="https://companieslogo.com/img/orig/UDMY_BIG.D-125629a7.png?t=1635531363" alt="">
-            
-</div>
+
 
         </div>
     </div>

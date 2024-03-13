@@ -1,8 +1,14 @@
 <script setup>
 import {i18n} from '../main'
 let verCertHenry = ()=>{
-    window.location.href= "https://certificates.soyhenry.com/new-cert?id=f65faf2e725ec6df6adfa805a01aa29945534edfb1bf8ec84070219fe31ab5d7"
+    window.open("https://certificates.soyhenry.com/new-cert?id=f65faf2e725ec6df6adfa805a01aa29945534edfb1bf8ec84070219fe31ab5d7")
 }
+const verCertNuclea = () => {
+  window.open("https://www.linkedin.com/feed/update/urn:li:activity:7171272554777591811/");
+};
+const verCertCoderhouse = () => {
+  window.open("https://i.ibb.co/c3HF8N1/coder-cert.png");
+};
 </script>
 <template>
 <div class="cont mt-5 pt-5">
@@ -21,19 +27,13 @@ let verCertHenry = ()=>{
             <div class="udemy  col-sm-3 ">
                 <h3>Nuclea</h3>
                 <p class="mb-12" >Donde aprendo y trabajo con Flutterflow, firebase y dart además de diseño mobile y flutter.</p>
-                <img src="https://media.licdn.com/dms/image/D4D22AQEpd9bVkMUw6g/feedshare-shrink_2048_1536/0/1709764611638?e=1713398400&v=beta&t=N66w0eHgnLBIQA6-fu3laQvpjW48uvGK-Gwrh6mRf1E" alt="constancia nuclea">
+                <img @click="verCertNuclea" src="https://media.licdn.com/dms/image/D4D22AQEpd9bVkMUw6g/feedshare-shrink_2048_1536/0/1709764611638?e=1713398400&v=beta&t=N66w0eHgnLBIQA6-fu3laQvpjW48uvGK-Gwrh6mRf1E" alt="constancia nuclea">
                 
             </div>
             <div  class="coder  col-sm-3 items-center justify-center ">
                 <h3> Coderhouse</h3>
                 <p class="mb-10">Html5, css3, bootstrap, Sass, github, git, SEO, subida al servidor, clientes y presupuestos.</p>
-                <img  src="https://i.ibb.co/c3HF8N1/coder-cert.png" alt="Certificate CoderHouse">
-                <a target="_blank" href="https://i.ibb.co/c3HF8N1/coder-cert.png"> 
-                    <div class="ver" >
-                        <p id="p2">ver certificado</p>
-                    </div>
-                    
-                </a>
+                <img  @click="verCertCoderhouse" src="https://i.ibb.co/c3HF8N1/coder-cert.png" alt="Certificate CoderHouse">
             </div>
             
         </div>
@@ -41,24 +41,20 @@ let verCertHenry = ()=>{
             <div class="soy col-sm-3">
     <h3>Soy Henry</h3>
     <p>Advanced JavaScript, data structures, React, Redux, Node.js, Express, SQL, PostgreSQL, Sequelize, Figma & more.</p>
-    <img src="https://i.ibb.co/zmxgxnq/certificado-henry-page-0001.jpg" alt="Certificate SoyHenry">
+    <img @click="verCertHenry" src="https://i.ibb.co/zmxgxnq/certificado-henry-page-0001.jpg" alt="Certificate SoyHenry">
             
 </div>
 <div class="udemy col-sm-3">
     <h3>Nuclea</h3>
     <p class="mb-12">Where I learn and work with FlutterFlow, Firebase, and Dart, as well as mobile design and Flutter.</p>
-    <img src="https://media.licdn.com/dms/image/D4D22AQEpd9bVkMUw6g/feedshare-shrink_2048_1536/0/1709764611638?e=1713398400&v=beta&t=N66w0eHgnLBIQA6-fu3laQvpjW48uvGK-Gwrh6mRf1E" alt="constancia nuclea">
+    <img  @click="verCertNuclea" src="https://media.licdn.com/dms/image/D4D22AQEpd9bVkMUw6g/feedshare-shrink_2048_1536/0/1709764611638?e=1713398400&v=beta&t=N66w0eHgnLBIQA6-fu3laQvpjW48uvGK-Gwrh6mRf1E" alt="constancia nuclea">
             
 </div>
 <div  class="coder col-sm-3 ">
     <h3>Coderhouse</h3>
     <p class="mb-10">HTML5, CSS3, Bootstrap, Sass, GitHub, Git, SEO, FileZilla,  server deployment, clients, and budgets.</p>
-    <img src="https://i.ibb.co/c3HF8N1/coder-cert.png" alt="">
-    <a target="_blank" href="https://i.ibb.co/c3HF8N1/coder-cert.png"> 
-        <div class="ver" >
-            <p id="p2">view certificate</p>
-        </div>    
-    </a>
+    <img @click="verCertCoderhouse" src="https://i.ibb.co/c3HF8N1/coder-cert.png" alt="">
+    
 </div>
 
 
@@ -195,15 +191,7 @@ let verCertHenry = ()=>{
     justify-content: center;
     padding: 5rem;
 }
-/* .wraper{
-    width: 80%;
-    display: flex;
-    flex-flow: row-reverse wrap;
-    justify-content: space-around;
-    align-items:start;
-    text-align: center;
-    
-} */
+
 .wraper{
     width: 80%;
     display: flex;
@@ -218,8 +206,8 @@ let verCertHenry = ()=>{
     width:100%;
     padding: 0%;
 }
-:hover.coder img{
-    filter: blur(1px);
+.coder img:hover{
+    transform: scale(1.1);
     
 }
 .ver{
@@ -264,9 +252,17 @@ let verCertHenry = ()=>{
     width: 100%;
  
 }
+.soy img:hover{
+   transform: scale(1.1);
+   
+ 
+}
 .udemy img{
     width:100%;
 
+}
+.udemy img:hover{
+    transform: scale(1.1);
 }
 }
 </style>

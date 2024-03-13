@@ -104,7 +104,7 @@ import Videos from '../components/Videos.vue';
   }
   .btn-go-home{
     position: fixed;
-    width: 5%;
+    width: 4%;
     background-color: transparent;
     border: none;
     margin-left: 3%;

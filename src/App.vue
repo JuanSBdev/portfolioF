@@ -20,9 +20,10 @@ function changeLanguage() {
   
   <main > 
     <div class="language">
+     
       <button class="btn-lang" @click="changeLanguage">  
-        <img  v-if="i18n.global.locale=== 'es'" :src="btnImgEn" class="bandera" alt="change language">
-        <img  v-else :src="btnImgEs" class="bandera" alt="cambiar idioma">
+        <p  v-if="i18n.global.locale=== 'es'"  class="bandera" >En</p>
+        <p v-else  class="bandera">Es</p>
       </button>
     </div>
     <router-view></router-view>
@@ -36,12 +37,11 @@ function changeLanguage() {
 
 .language{
   z-index: 3;
-  position: fixed;
-  right: 5%;
-  top: 2%;
+  position:absolute;
+  right: 2%;
+  top: 5PX;
   width: 40px;
   
-  border-radius: 10rem;
   overflow: hidden;
 }
 .btn-lang{
@@ -50,9 +50,27 @@ function changeLanguage() {
 .bandera{
   display: flex;
   justify-content: center;
-  transform: scale(1.8);
-  width: 100%;
-  max-height: 40px;
+  font-size: 1.4rem;
+  color: aliceblue;
+  font-family:Arial, Helvetica, sans-serif;
+  border-radius: 10rem;
 }
- 
+@media screen and (max-width: 640px) {
+  .language{
+  z-index: 3;
+  position:absolute;
+  right: 8%;
+  top: 45PX;
+  width: 30px;
+  
+  overflow: hidden;
+}
+  .bandera{
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-family:Arial, Helvetica, sans-serif;
+
+}
+}
 </style>

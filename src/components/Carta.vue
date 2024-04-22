@@ -15,12 +15,12 @@ import { i18n } from '../main'
             <a v-else class="col-4 px-2 pro " href="#proyects">Projects</a>
       </div>
 
-        <div class="profile col-md-4">
-          <div class="foto">
+        <div class="profile col-md-4 ">
+          <div class="foto d-flex content-center">
             <img src="https://i.ibb.co/SfjNPzk/selected-Photo-Room-1.png" alt="Imagen cv">
-            <h2  v-if="i18n.global.locale === 'es'">Hola, soy Juan Lluvia</h2>
-            <h2  v-else>Hi i'm Juan Lluvia</h2>
-            <h3 > ⚡Full Stack Developer⚡ </h3>
+            <h2  v-if="i18n.global.locale === 'es'">Hola! Soy Juan Lluvia</h2>
+            <h2  v-else>Hi! i'm Juan SB</h2>
+            <p class="text-xl" > ⚡Software Developer </p>
           </div>
           <div class="logos-mobile">
             <div class="row  links-info-mobile">
@@ -45,21 +45,21 @@ import { i18n } from '../main'
           <div class="con2">
 
             <div class="info ">
-              <h3>Basic Info</h3>
+              <h3 class="font-semibold" >Basic Info</h3>
              
              <p v-if="i18n.global.locale === 'es'" >Vivo en Argentina.</p>
              <p v-else>Based in Argentina.</p>
-             <p v-if="i18n.global.locale === 'es'">25 años</p>
-             <p v-else>25 years old</p>
+             <p v-if="i18n.global.locale === 'es'">26 años</p>
+             <p v-else>26 years old</p>
              <p>Spanish native </p>
                <p> English - B2 (Conversational)</p>
                <p> Deutsch A2</p>
             </div>
             <div class="skills ">
-              <h3 v-if="i18n.global.locale === 'es'">Tech Stack</h3>
-              <h3 v-else >Tech Stack</h3>
+              <h3 class="font-semibold">Tech Stack</h3>
+              
               <p>HTML5 - CSS - SASS - Bootstrap - Tailwinds - FlexBox - Figma. </p>
-              <p> JavaScript ES6 - Vue3.JS - React.JS - Redux  + Vite</p>
+              <p> JavaScript - Vue3.JS - React.JS - Redux - Zustand + Vite</p>
               <p>Node.js - Express - SQL - PostgreSQL - Sequelize  </p>
               <p> Git - GitHub - NPM - Yarn - Scrum Agile - FTP</p>
             </div>
@@ -71,7 +71,7 @@ import { i18n } from '../main'
  ✍
 ✔ Me especializo en la creación de sitios web responsive y mobile first,  poseo un sólido conjunto de habilidades para la resolución de problemas tanto en el desarrollo front-end como en el back-end
 </p>
-<p>⌛actualmente trabajando en una App de alquileres fullstack ⌛</p>
+<!-- <p>⌛ trabajando ⌛</p> -->
 <!-- <p>
   ⌛ En busca de experiencia laboral y un espacio el cual me permita el seguir formando y capacitándome.⌛ 
   
@@ -82,11 +82,11 @@ import { i18n } from '../main'
                     ✍✔
                     As a proactive web developer, I specialize in crafting responsive, mobile- first websites, and possess a strong problem-solving skillset for both front- end and back-end development, all while leveraging the latest technologies.
                  </p>
-                 <p>
+                 <!-- <p>
                   ⌛ 
    Currently working on a rental fullstack App⌛ 
   
-                 </p>
+                 </p> -->
                 </div>
                 </div>
           </div>
@@ -346,7 +346,7 @@ import { i18n } from '../main'
   align-self: flex-start;
   font-size: 1.9rem;
   width: 120%;
-  margin-left: -20%;
+  
   padding: 1%;
 }
   h3{

@@ -15,16 +15,16 @@ function copyEmail() {
 
     
     <div class="contenedor">
-        <div class="email"  @click="copyEmail()">
+        <div class="email d-flex "  @click="copyEmail()">
             <div class="maildata">
-                <img src="https://aonialearning.com/wp-content/uploads/2021/08/Curso-Google-Gmail.png" alt="gmail logo">
-                <p class="text-texto-claro" >juansb.dev@gmail.com</p>
+                <!-- <p class="text-texto-claro" >juansb.dev@gmail.com</p> -->
+                <img src="https://static.vecteezy.com/system/resources/previews/017/396/757/non_2x/google-mail-icons-free-png.png" alt="gmail logo">
             </div>
         </div>
         <div class="linkedin">
-            <a href="https://www.linkedin.com/in/jlsb/">
+                <a href="https://www.linkedin.com/in/jlsb/">
                 <img src="https://img.freepik.com/iconos-gratis/linkedin_318-157468.jpg?" alt="linkedin logo">
-                 <p >linkedIn  </p>
+                 <!-- <p >linkedIn  </p> -->
             </a>
         </div>
     </div>
@@ -87,6 +87,10 @@ p{
     align-items: center;
     justify-content: center;
 }
+.linkedin img{
+    width: 60%;
+   
+}
 .linkedin a{
     padding: 10%;
     text-decoration: none;
@@ -140,7 +144,7 @@ p{
 .contenedor{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: center;
     padding-bottom: 0%;
 
     
@@ -158,7 +162,6 @@ p{
 }
 .maildata{
     display: flex;
-    align-items: end;
     justify-content: center;
 }
 .linkedin{
@@ -182,7 +185,7 @@ p{
     margin-left: 2%;
 }
 .linkedin img{
-    width: 10%;
+    width: 23%;
 }
 /* .linkedin:hover{
     transform: scale(1.1);

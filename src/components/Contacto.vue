@@ -14,6 +14,12 @@ function copyEmail() {
     <h6 v-else class=""> [ Reach me ]</h6>
 
     
+ 
+    
+    <div class="elForm w-100  flex justify-center">
+        <Form></Form>
+        <!-- <Form class="form_skillsview"></Form> -->
+    </div>
     <div class="contenedor">
         <div class="email d-flex "  @click="copyEmail()">
             <div class="maildata">
@@ -28,11 +34,7 @@ function copyEmail() {
             </a>
         </div>
     </div>
-    
-    <div class="elForm w-100  flex justify-center">
-        <Form></Form>
-        <!-- <Form class="form_skillsview"></Form> -->
-    </div>
+
     <div class="cvu flex w-100 justify-center ">
         <a id="cv" class="w-10" target="_blank" href="https://drive.google.com/file/d/1qVXrlQJ3aOj-I5usOSJDtsi_8kPdfXxX/view?usp=sharing">
             <p v-if="i18n.global.locale=== 'es'" class="text-texto-col"> Descargar CV</p>
@@ -60,6 +62,7 @@ p{
     justify-content: center;
 }
 .contenedor{
+
     display: flex;
     justify-content: center;
     flex-flow: row nowrap;
@@ -132,10 +135,12 @@ img{
     width: 20%;
 }
 h6{
+    font-family: 'Ubuntu', sans-serif;
     margin-top: 15%;
     display: flex;
     justify-content: center;
     font-size: 2rem;
+    font-weight: bolder;
 }
 p{
     display: flex;
@@ -146,6 +151,7 @@ p{
     flex-flow: row nowrap;
     justify-content: center;
     padding-bottom: 0%;
+    
 
     
 

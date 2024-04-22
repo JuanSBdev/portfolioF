@@ -53,7 +53,7 @@ const datos = {
 
 <section v-if="i18n.global.locale === 'es'" class=" flex flex-row justify-center items-center dark:bg-gray-900  w-100" >
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md ">
-      <p   class="mb-8 lg:mb-6 font-light text-center text-texto-col dark:text-gray-400 sm:text-xl">dejame aquí tu consulta y te responderé a la brevedad.</p>
+      <p   class="mb-8 lg:mb-6 font-light text-center text-texto-col dark:text-gray-400 sm:text-xl ">dejame aquí tu consulta y te responderé a la brevedad.</p>
       
 
       <div  class="space-y-5 ">
@@ -107,5 +107,10 @@ const datos = {
 
 
 </template> 
+<style scoped>
+  * {
+    font-family: 'Ubuntu', sans-serif;
+  }
 
+</style>
 

@@ -27,7 +27,7 @@ const verCertCoderhouse = () => {
             <div class="udemy  col-sm-3 ">
                 <h3>Nuclea</h3>
                 <p class="mb-12" >Donde aprendo y trabajo con Flutterflow, firebase y dart además de diseño mobile y flutter.</p>
-                <img @click="verCertNuclea" src="https://media.licdn.com/dms/image/D4D22AQEpd9bVkMUw6g/feedshare-shrink_2048_1536/0/1709764611638?e=1713398400&v=beta&t=N66w0eHgnLBIQA6-fu3laQvpjW48uvGK-Gwrh6mRf1E" alt="constancia nuclea">
+                <img @click="verCertNuclea" src="../assets/resources/cert.jpeg" alt="constancia nuclea">
                 
             </div>
             <div  class="coder  col-sm-3 items-center justify-center ">

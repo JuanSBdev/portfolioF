@@ -1,7 +1,8 @@
 <script setup>
 import { i18n } from '../main';
 import Form from './Form.vue';
-
+let cvSpa="https://drive.google.com/file/d/1AeDJcq6ghBYCV64OtfjO7JW9SKszXolL/view?usp=sharing"
+let cvEng="https://drive.google.com/file/d/1q1_lRsnGovf0aw24_Ojzv6XvLTOdjmEG/view?usp=sharing"
 
 function copyEmail() {
   const email = 'juansb.dev@gmail.com';
@@ -34,9 +35,9 @@ function copyEmail() {
             </a>
         </div>
     </div>
-
+    
     <div class="cvu flex w-100 justify-center ">
-        <a id="cv" class="w-10" target="_blank" href="https://drive.google.com/file/d/1qVXrlQJ3aOj-I5usOSJDtsi_8kPdfXxX/view?usp=sharing">
+        <a id="cv" class="w-10" target="_blank"  :href="i18n.global.locale === 'es' ? cvSpa : cvEng">
             <p v-if="i18n.global.locale=== 'es'" class="text-texto-col"> Descargar CV</p>
             <p v-else class="text-texto-col"> Download Resume</p>
             <img id="img-d" class="img-down pb-4 " src="https://static.vecteezy.com/system/resources/previews/015/166/075/original/download-neon-icon-png.png" alt="">
@@ -169,6 +170,7 @@ p{
 .maildata{
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 .linkedin{
     width: 20%;

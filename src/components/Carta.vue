@@ -1,6 +1,8 @@
 <script setup>
 import { i18n } from '../main'
-
+let profileImg = 'https://media.licdn.com/dms/image/v2/D4D03AQGVOo8qFe0OdQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1711071122473?e=1759968000&v=beta&t=QgvJGO2reheFsG0zbzha0gjs698K5LD6g7X7H2JMJV4'
+let cvSpa="https://drive.google.com/file/d/1AeDJcq6ghBYCV64OtfjO7JW9SKszXolL/view?usp=sharing"
+let cvEng="https://drive.google.com/file/d/1q1_lRsnGovf0aw24_Ojzv6XvLTOdjmEG/view?usp=sharing"
 </script>
 <template >
     <div class="container  row">
@@ -8,8 +10,8 @@ import { i18n } from '../main'
         <h2>JLSB.</h2>
       </div>
       <div class=" links-info">
-            <a v-if="i18n.global.locale === 'es'" class="col-4  cv  px-2 font-semibold" target="blank" href="https://drive.google.com/file/d/17b1no5yYz4RjfN5kT-c3Mq4bGes02Ig9/view?usp=sharing">Curriculum</a>
-            <a v-else class="col-4  cv  px-2 font-semibold" target="blank" href="https://drive.google.com/file/d/1qVXrlQJ3aOj-I5usOSJDtsi_8kPdfXxX/view?usp=sharing">Resume</a>
+            <a v-if="i18n.global.locale === 'es'" class="col-4  cv  px-2 font-semibold" target="blank" :href="cvSpa">Curriculum</a>
+            <a v-else class="col-4  cv  px-2 font-semibold" target="blank" :href="cvEng">Resume</a>
 
             <a v-if="i18n.global.locale === 'es'" class="col-4 px-2 pro font-semibold " href="#proyects">Proyectos</a>
             <a v-else class="col-4 px-2 pro  font-semibold" href="#proyects">Projects</a>
@@ -17,7 +19,7 @@ import { i18n } from '../main'
 
         <div class="profile col-md-4 ">
           <div class="foto d-flex content-center">
-            <img src="https://media.licdn.com/dms/image/v2/D4D03AQGVOo8qFe0OdQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1711071122473?e=1759968000&v=beta&t=QgvJGO2reheFsG0zbzha0gjs698K5LD6g7X7H2JMJV4" alt="Imagen cv">
+            <img :src= "profileImg" alt="Imagen cv">
             <h2  v-if="i18n.global.locale === 'es'">Hola! Soy Juan Lluvia</h2>
             <h2  v-else>Hi! i'm Juan SB</h2>
             <p class="text-xl" > ⚡Software Developer </p>
@@ -459,7 +461,7 @@ h3{
 
 }
  #github{
-  width: 110%;
+  width: 70%;
   min-width: 40px;
 
  }

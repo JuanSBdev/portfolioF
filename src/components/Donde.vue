@@ -9,7 +9,9 @@ const verCertNuclea = () => {
 const verCertCoderhouse = () => {
   window.open("https://i.ibb.co/c3HF8N1/coder-cert.png");
 };
+import nucleaCert from "@/assets/resources/cert.jpeg"
 </script>
+
 <template>
 <div class="cont mt-5 pt-5">
 
@@ -27,7 +29,7 @@ const verCertCoderhouse = () => {
             <div class="udemy  col-sm-3 ">
                 <h3>Nuclea</h3>
                 <p class="mb-12" >Donde aprendo y trabajo con Flutterflow, firebase y dart además de diseño mobile y flutter.</p>
-                <img @click="verCertNuclea" src="../assets/resources/cert.jpeg" alt="constancia nuclea">
+                <img @click="verCertNuclea" :src="nucleaCert" alt="constancia nuclea">
                 
             </div>
             <div  class="coder  col-sm-3 items-center justify-center ">

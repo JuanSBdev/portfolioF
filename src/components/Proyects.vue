@@ -17,6 +17,7 @@ const redireccionarLista = () => {
 const redireccionarCoder = () => {
   window.open("https://kira-mobile-9vh6gn.flutterflow.app/");
 };
+import kiraLogo from '@/assets/resources/k-solid-full.svg'
 
 
 </script>
@@ -37,7 +38,7 @@ const redireccionarCoder = () => {
         <div
             @click="redireccionarCoder"
             class="kira col-6 col-sm-2 card">
-            <img src="https://kirasystems.com/files/press-kit/logos/Kira-logo_WEB.png" alt="Logo Kirá ">
+            <img :src="kiraLogo" alt="Logo Kirá ">
                <h6>Rental App</h6>
                <p>App de alquileres , multiplataforma, desarrollada en Flutterflow, dart, firebase</p> 
             </div>

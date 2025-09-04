@@ -10,7 +10,7 @@ import {i18n} from '../main'
     
     </p>
     <p class="col-md-4 col-12 "> 
-         JavaScript Vanilla (advanced), Vue.js 3,  React.js, Redux, Node.js, Express, SQL, PostgreSQL, Sequelize. Realicé tambíen proyectos en WordPress CMS.
+         JavaScript Vanilla, Vue.js 3,  React.js, Redux, Node.js, Express, SQL, PostgreSQL, Sequelize, Firebase, Flutterflow , basic Flutter.
     </p>
     <p class="col-md-4 col-12">
         
@@ -23,7 +23,7 @@ import {i18n} from '../main'
 <div v-else class="container row ">
    
     <p class="col-md-4 col-12 "> 
-        JavaScript Vanilla (advanced), Vue.js 3,  React.js, Redux, Node.js, Express, SQL, PostgreSQL, Sequelize. Additionally, I have completed projects using the WordPress CMS.
+        JavaScript Vanilla, Vue.js 3,  React.js, Redux, Node.js, Express, SQL, PostgreSQL, Sequelize, Firebase, Flutterflow , basic Flutter.
     </p>
     <p class="col-md-4 col-12">  The languages and technologies I use for designing and layout are HTML5, CSS3, SASS, Flexbox, Grids, TailwindsCSS, Material UI & Bootstrap. 
     </p>    

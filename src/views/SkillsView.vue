@@ -14,10 +14,10 @@ import Videos from '../components/Videos.vue';
 <template >
       <button class="btn-go-home" >
         <router-link to="/">
-          <img src="https://www.freepnglogos.com/uploads/logo-home-png/home-logo-images-black-5.png" class="img-logo-home" alt="">
+          <img src="../assets/resources/house-solid-full.svg" class="img-logo-home" alt="house logo">
         </router-link>
     </button>
-
+  
   <Arriba />
   
   <div class="wraper">

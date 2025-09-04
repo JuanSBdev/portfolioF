@@ -17,7 +17,7 @@ import { i18n } from '../main'
 
         <div class="profile col-md-4 ">
           <div class="foto d-flex content-center">
-            <img src="https://i.ibb.co/SfjNPzk/selected-Photo-Room-1.png" alt="Imagen cv">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQGVOo8qFe0OdQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1711071122473?e=1759968000&v=beta&t=QgvJGO2reheFsG0zbzha0gjs698K5LD6g7X7H2JMJV4" alt="Imagen cv">
             <h2  v-if="i18n.global.locale === 'es'">Hola! Soy Juan Lluvia</h2>
             <h2  v-else>Hi! i'm Juan SB</h2>
             <p class="text-xl" > ⚡Software Developer </p>
@@ -333,13 +333,12 @@ import { i18n } from '../main'
   margin-left: 2%;
 }
 .foto img{
-  border-radius: 6rem;
+  border-radius: 3rem;
   width: 70%;
   margin-bottom: 10%;
   min-width: 100px;
   opacity: .9;
-    border: 1px solid rgba(191, 50, 226, 0.658);
-    box-shadow: 0 0 10px 0;
+  border: 1px solid rgba(191, 50, 226, 0.658);
 
 }
 .foto h2{

@@ -60,7 +60,8 @@ import { i18n } from '../main'
         <img src="https://miro.medium.com/v2/resize:fit:500/1*CPDIH8BWrGipHRJ6o6E2Vw.png" alt="Vue logo">
         <img src="https://qualitapps.com/wp-content/uploads/2023/02/102.png" alt="node.js logo">
         <img src="https://1000logos.net/wp-content/uploads/2020/08/PostgreSQL-Logo.png" alt="SQL logo">
-        <img src="https://vitejs.dev/logo-with-shadow.png" alt="vite">
+        <img src="https://iconlogovector.com/uploads/images/2024/12/lg-676a3861d111b-Vite.webp" alt="vite">
+        <img src="https://cdn.prod.website-files.com/64c7a317aea92912392c0420/6797bc3da6569c846c184b4d_logo_primary_color_onLight%402x.png" alt="Flutterflow logo">
       </div>
     </div>
 </template>
@@ -77,12 +78,13 @@ import { i18n } from '../main'
     color: rgb(221, 45, 209);
   }
   .contenedor-home{
+    height: 100vh;
     font-family: 'Ubuntu', sans-serif;
     color: aliceblue;
     background-image: url('https://www.pngmart.com/files/13/Pattern-Transparent-Background.png');
     display: flex;
     flex-flow: column nowrap;
-    padding: 3%
+    padding:3%;
   }
   .contenedor-home h1{
     padding-top: 5%;
@@ -125,12 +127,13 @@ import { i18n } from '../main'
   border-bottom: 2px solid violet;
 }
 .footer{
+  width: 90%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  padding-bottom: 5%;
 }
 .footer img{
-  width: 20%;
+  width: 15%;
   object-fit: contain;
   transform: scale(.4);
 }

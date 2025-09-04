@@ -1,5 +1,7 @@
 <script setup>
 import { i18n } from '../main'
+let cvSpa = "https://drive.google.com/file/d/1AeDJcq6ghBYCV64OtfjO7JW9SKszXolL/view"
+let cvEng="https://drive.google.com/file/d/1q1_lRsnGovf0aw24_Ojzv6XvLTOdjmEG/view"
 
 </script>
 <template>
@@ -8,7 +10,7 @@ import { i18n } from '../main'
       <router-link to="Skills">
         <p>About.</p>
       </router-link>
-        <a   target="blank" href="https://drive.google.com/file/d/1qVXrlQJ3aOj-I5usOSJDtsi_8kPdfXxX/view?usp=sharing">
+        <a   target="blank" :href="cvEng">
         Resume.
       </a>
       <router-link to="Contacto">
@@ -19,7 +21,7 @@ import { i18n } from '../main'
       <router-link to="Skills">
         <p>About.</p>
       </router-link>
-      <a   target="blank" href="https://drive.google.com/file/d/17b1no5yYz4RjfN5kT-c3Mq4bGes02Ig9/view?usp=sharing">
+      <a   target="blank" :href="cvSpa">
 
               Mi CV.
             </a>
@@ -127,7 +129,7 @@ import { i18n } from '../main'
   border-bottom: 2px solid violet;
 }
 .footer{
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

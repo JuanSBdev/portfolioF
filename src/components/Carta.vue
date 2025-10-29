@@ -1,6 +1,6 @@
 <script setup>
 import { i18n } from '../main'
-let profileImg = 'https://media.licdn.com/dms/image/v2/D4D03AQGVOo8qFe0OdQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1711071122473?e=1759968000&v=beta&t=QgvJGO2reheFsG0zbzha0gjs698K5LD6g7X7H2JMJV4'
+let profileImg = 'https://media.licdn.com/dms/image/v2/D4D03AQGVOo8qFe0OdQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1711071122473?e=1763596800&v=beta&t=iV5JOIx2d2flDe6J0OOZST6lOHTqCHqTAR-_xH5r9do'
 let cvSpa="https://drive.google.com/file/d/1AeDJcq6ghBYCV64OtfjO7JW9SKszXolL/view?usp=sharing"
 let cvEng="https://drive.google.com/file/d/1q1_lRsnGovf0aw24_Ojzv6XvLTOdjmEG/view?usp=sharing"
 </script>

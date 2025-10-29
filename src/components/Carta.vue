@@ -16,6 +16,7 @@ let cvEng="https://drive.google.com/file/d/1q1_lRsnGovf0aw24_Ojzv6XvLTOdjmEG/vie
             <a v-if="i18n.global.locale === 'es'" class="col-4 px-2 pro font-semibold " href="#proyects">Proyectos</a>
             <a v-else class="col-4 px-2 pro  font-semibold" href="#proyects">Projects</a>
       </div>
+        <div class="profileInfo">
 
         <div class="profile col-md-4 ">
           <div class="foto d-flex content-center">
@@ -43,7 +44,7 @@ let cvEng="https://drive.google.com/file/d/1q1_lRsnGovf0aw24_Ojzv6XvLTOdjmEG/vie
         </div>
 
         
-        <div class="div col-md-7">
+        <div class="div test col-md-7">
           <div class="con2">
 
             <div class="info ">
@@ -94,12 +95,13 @@ let cvEng="https://drive.google.com/file/d/1q1_lRsnGovf0aw24_Ojzv6XvLTOdjmEG/vie
           </div>
 
         </div>
+        </div>
 
     
     </div>
 </template>
 <style scoped>
-@media screen and (max-width: 574px) {
+@media screen and (max-width: 575px) {
   h3{
     font-size: 1.5rem;
   }
@@ -424,7 +426,11 @@ h3{
     animation: tit 2s ease infinite;
     
   }
+  .profileInfo{
+display: flex;
+  }
 .con2{
+
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;

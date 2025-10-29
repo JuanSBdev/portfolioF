@@ -447,7 +447,8 @@ display: flex;
   margin-right: 10%;
 }
 .con3{
-  text-align: start;
+  text-align: center;
+  margin-top: 5%;
 }
 
 .logos{
